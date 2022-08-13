@@ -99,13 +99,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    padding-top: 20%;
-    padding-bottom: 25%; 
     height: 100%;
 }
 
 .first_page__logo {
+    padding-top: 18%;
     width: 50%;
+    padding-bottom: 15%;
 }
 
 @media(max-width:687px){
