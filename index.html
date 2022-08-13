@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZAGAVET</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <div class="first_page first_page__container">
+            <div class="first_page__logo">
+              <img src="images/header/Group 2.png" alt="background photo" />
+            </div>
+          </div>
+          <div class="header__main">
+            <div class="header__menu__container">
+              <div class="logo_header">
+                <img src="images/header/logo.png" alt="Zagavet logo" />
+              </div>
+              <div class="menu_container">
+              <nav class="menu_desktop">
+                  <li><a class="first_link" href="#">про нас</a></li>
+                  <li><a href="#">послуги</a></li>
+                  <li><a href="#">галерея</a></li>
+                  <li><a href="#">контакти</a></li>
+              </nav>
+            </div>
+            <div class="phone_container">
+              <img class="phone_icon phone_icon_header" src="images/header/phone_icon.png" alt="phone icon">
+              <a href="tel:+380322536317">+38 032 253 63 17</a>
+            </div>
+            </div>
+            <div class="homepage_content_container">
+              <div class="homepage_content">
+              <p class="p_main">КЛІНІКА ВЕТЕРИНАРНОЇ МЕДИЦИНИ</p>
+              <h1>ZAGA<span>VET</span></h1>
+              <h3>
+                Запрошуємо ваших улюбленців зберігати їхнє життя та щастя. Коли ваш
+                вихованець потребує ветеринарної допомоги - ми відкриті
+              </h3> 
+               <div class="button_main">
+                <a class="open_modal" href="tel:+380985689048"><span> ЗАПИСАТИСЬ НА ПРИЙОМ</span></a>
+              </div>
+            </div>
+            <div class="homepage_links">
+              <div class="languages_link">EN</div>
+              <div class="social-media_links">
+                <img src="images/header/instagram-logo.png" alt="instagram logo">
+                <img src="images/header/facebook-letter-logo.png" alt="facebook logo">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      <!-- <div class="header">
+        <div class="logo">
+          <img src="images/logo-mobile.png" alt="logo-Zagavet" /><span class="logo_name">ZAGA<span>VET</span></span>
+        </div>
+        <div class="menu_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="menu hide">
+        <nav>
+          <li><a href="#about_us">ПРО НАС</a></li>
+          <li><a href="#services">ПОСЛУГИ</a></li>
+          <li><a href="#contacts">КОНТАКТИ</a></li>
+        </nav>
+      </div> -->
+    
+    </section> 
+      </header>
+
+      <!-- <main>
+    <section class="about_us" id="about_us">
+      <div class="about_us_content">
+        <h3 class="title">ПРО НАС</h3>
+        <p class="p_about_us">
+          Ми - ветеринарна клініка Zagavet. Пропонуємо розумне, дбайливе і
+          якісне лікування, а також поради з усіх аспектів здоров'я вашого
+          вихованця. Надаємо кваліфіковані консультації та послуги із
+          діагностики, хірургії та моніторингу якості життя.
+        </p>
+        <img class="about_us_icon" src="images/medical-icon.png" alt="icon-medical" />
+        <p>
+          Знаходимося у Львові, на перехресті вулиць Київської та Єфремова.
+          Зберігаємо здоров'я чотирилапих та дбаємо за щастя їхніх господарів!
+          Zagavet - клініка для звірят великих та малих!
+        </p>
+      </div>
+      <div class="doctors_carousel">
+        <div class="container_buttons_carousel">
+          <div class="button_carousel previous_slide"></div>
+          <div class="carousel_title">
+            <div class="doctors_name">НАША КОМАНДА</div>
+          </div>
+          <div class="button_carousel next_slide"></div>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="doctors_carousel_content">
+                <div class="doctors_carousel_content_header">
+                  <img class="doctors_photo" src="images/doctors_photo/Kateryna_Mykytei_photo.png"
+                    alt="Kateryna Mykytei photo" width="200" />
+                  <div class="content_container">
+                    <div class="doctors_title">
+                      <span class="doctors_name">Dr. kateryna mykytei</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctors_specialization_section">
+                  <p>
+                    Діагноз:<span id="specialization"> лікарка терапевт, стоматолог</span>
+                  </p>
+                </div>
+                <div class="about_doctors">
+                  <h6>Епікриз:</h6>
+                  <p class="about_doctors_p">
+                    У віці 5-ти років утікла з дому з працівниками державної
+                    служби ветеринарної медицини, котрі якраз проводили заходи
+                    із профілактики та боротьби зі сказом у містечку Заставна
+                    Чернівецької області. З того часу “невиліковно захворіла”
+                    на ветеринарію. Випускниця ЛНУВМБ ім. С.З. Гжицького з
+                    відзнакою. Магістр ветеринарної медицини.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="doctors_carousel_content">
+                <div class="doctors_carousel_content_header">
+                  <img class="doctors_photo" src="images/doctors_photo/Natalia_Duma_photo.png" alt="Natalia_Duma_photo"
+                    width="200" />
+                  <div class="content_container">
+                    <div class="doctors_title">
+                      <span class="doctors_name">Dr. natalia duma</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctors_specialization_section">
+                  <p>
+                    Діагноз:
+                    <span id="specialization"> лікарка загальної ветеринарної практики,хірург</span>
+                  </p>
+                </div>
+                <div class="about_doctors">
+                  <h6>Епікриз:</h6>
+                  <p class="about_doctors_p">
+                    Всупереч мріям батьків бачити доньку акушером-гінекологом,
+                    майже з пелюшок щоденно практикувала іньєкції aqua
+                    destillata та ургентні хірургічні втручання своїм плюшевим
+                    пацієнтам. Усі живі-здорові. Випускниця ЛНУВМБ
+                    ім.С.З.Ґжицького, спеціаліст ветеринарної медицини.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="doctors_carousel_content">
+                <div class="doctors_carousel_content_header">
+                  <img class="doctors_photo" src="images/doctors_photo/Viktoria_Tokarska_photo.png"
+                    alt="Viktoria_Tokarska_photo" width="200" />
+                  <div class="content_container">
+                    <div class="doctors_title">
+                      <span class="doctors_name">Dr. Viktoria Tokarska</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctors_specialization_section">
+                  <p>
+                    Діагноз:
+                    <span id="specialization"> лікарка-терапевт</span>
+                  </p>
+                </div>
+                <div class="about_doctors">
+                  <h6>Епікриз:</h6>
+                  <p class="about_doctors_p">
+                    З дитинства оточена собаками, кіньми, кріликами,
+                    тритонами, слимаками та вужами. Легко міняла серію
+                    «Качиних історій» на серію «Animal Planet». Ділить дім з
+                    лайкою Джеком та кицею Лу. Випускниця ЛНУВМБ
+                    ім.С.З.Гжицького, лікар ветеринарної медицини.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="doctors_carousel_content">
+                <div class="doctors_carousel_content_header">
+                  <img class="doctors_photo" src="images/doctors_photo/Mykola_Lychko_photo.jpg"
+                    alt="Mykola_Lychko_photo" width="200" />
+                  <div class="content_container">
+                    <div class="doctors_title">
+                      <span class="doctors_name">Dr. mykola lychko</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctors_specialization_section">
+                  <p>
+                    Діагноз:
+                    <span id="specialization"> хірург</span>
+                  </p>
+                </div>
+                <div class="about_doctors">
+                  <h6>Епікриз:</h6>
+                  <p class="about_doctors_p">
+                    Згідно із усіма гендерними стереотипами завжди мріяв бути
+                    солдатом, і, звісно ж, з собакою. У віці 10 років
+                    захопився читанням книг Джеймса Херріота, котрий легко
+                    перекваліфікував малого кінолога у ветеринара. Випускник
+                    ЛНУВМБ ім. С.З. Гжицького. Магістр ветеринарної медицини.
+                    Лікар-ординатор клініки Кафедри акушерства ЛНУВМБ. Власник
+                    клініки Zagavet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="doctors_carousel_content">
+                <div class="doctors_carousel_content_header">
+                  <img class="doctors_photo" src="images/doctors_photo/Tetyana_Lychko_photo.png"
+                    alt="Tetyana_Lychko_photo" width="200" />
+                  <div class="content_container">
+                    <div class="doctors_title">
+                      <span class="doctors_name">Dr. tetyana lychko</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctors_specialization_section">
+                  <p>
+                    Діагноз:
+                    <span id="specialization"> лікарка загальної ветеринарної практики</span>
+                  </p>
+                </div>
+                <div class="about_doctors">
+                  <h6>Епікриз:</h6>
+                  <p class="about_doctors_p">
+                    Безстрашність та вроджена цікавість вже у 8 років привела
+                    до успішного приймання пологів у собаки. Разом з
+                    цуценятами на світ народилося тверде переконання у виборі
+                    майбутньої професії: ветеринар, так тому і бути.
+                    Випускниця ЛНУВМБ ім. С.З. Гжицького. Лікар ветеринарної
+                    медицини. Власниця клініки Zagavet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    </section>
+    <section class="quote">
+      <div class="quote_block">
+        <p class="quote_text">
+          Книга ця присвячена самому простому, з чого завжди складалося наше
+          життя, — нашій роботі, чотирилапим пацієнтам і ветеринарній клініці.
+        </p>
+        <div class="author">
+          <span>- Jpp. Herriot</span>
+        </div>
+      </div>
+    </section>
+    <section class="services_block" id="services">
+      <div class="services_main">
+        <h3 class="title">ПОСЛУГИ</h3>
+        <p class="p_services">
+          Zagavet це команда однодумців, об’єднаних ветеринарною практикою.
+          Пропонуємо широкий спектр послуг задля здоров’я та доброго почування
+          ваших вихованців. До ваших послуг - кваліфіковані поради щодо
+          профілактики захворювань і травм, своєчасна діагностика лікування та
+          хірургічні втручання, а також професійна стоматологічна гігієна та
+          багато іншого.
+        </p>
+      </div>
+      <div class="services">
+        <div class="services_border">
+          <h4>Терапія</h4>
+          <p>
+            Ми завжди на варті здоров’я вашого звірятка і своєчасно зреагуємо
+            на зміни, призначимо діагностику та розумне лікування. Ми
+            пильнуватимемо за вашим компаньйоном під час лікування та після
+            одужання, забезпечимо консультаціями з профілактики, утримання та
+            харчування. Zagavet - ваші “сімейні ветеринари”.
+          </p>
+          <h4>Хірургія</h4>
+          <p>
+            Терапії недостатньо і потрібно щось спеціальне? За потреби
+            призначаємо та проводимо хірургічні операції - остеосинтез,
+            абдомінальні, при онкологічних захворюваннях, косметичні та
+            пластичні, і, куди ж без цього, рутинні стерилізацію і кастрацію.
+            Забезпечуємо післяопераційну “білизну” та комірці безпеки.
+          </p>
+          <h4>діагностика</h4>
+          <p>
+            Ми співпрацюємо із найкращими діагностами та клінічними
+            лабораторіями в Україні та за кордоном, іі пропонуємо широкий
+            спектр аналізів та діагностичних процедур. Маємо до диспозиції
+            обладнання експертного класу, що дозволяє провести УЗД та Ехо-КГ
+            найвищого рівня.
+          </p>
+          <h4>Стоматологія</h4>
+          <p>
+            Цьомики вашого песика стали занадто “ароматними”? - можливо, саме
+            час прийти до дантиста. Ми проведемо огляд, лікування та
+            гігієнічні процедури вашому звіряткові без болю та стресу.
+          </p>
+          <h4>Профілактика</h4>
+          <p>
+            Регулярні щеплення - це не тільки важливо, а й соціально
+            відповідально, адже мінімізують ризик спалаху епізоотій. Саме тому
+            ми приділяємо велику увагу вакцинаціям та профілактиці вашого
+            улюбленця від різноманітних паразитів, бо лише своєчасна
+            профілактика захистить від небезпечних для життя та здоров’я
+            інфекцій. Усі звірятка перед щепленнями проходять ретельні бадання
+            здоров'я, а після щеплення - гарну наліпку в паспорт :)
+          </p>
+          <h4>Подорожі</h4>
+          <p>
+            Для тварин-мандрівників та їх господарів завжди забезпечуємо
+            актуальну інформацію про те, як правильно та безпечно
+            подорожувати. Проведемо чіпування, зробимо усі необхідні щеплення
+            та допоможемо підготувати необхідні для подорожі документи. І,
+            звісно ж, проведемо профілактичний огляд перед мандрівкою.
+          </p>
+          <h4>Харчування</h4>
+          <p>
+            У вас невгамовний цуцик, старенький примхливий кіт чи лабрадор із
+            зайвими сантиметрами на талії? Ми підберемо раціон та подбаємо про
+            розумну дієту. У нас ви зможете придбати свіжі та якісні корми
+            преміум та супер-преміум класу. А на десерт маємо смачні ласощі
+            від найкращих виробників.
+          </p>
+          <h4>Аптека</h4>
+          <p>
+            Для вашої зручності маємо невелику вітрину ветеринарних препаратів
+            за розумними цінами. Призначаємо, консультуємо, допомагаємо знайти
+            необхідне.
+          </p>
+          <div class="button_main">
+            <a class="open_modal" href="tel:+380985689048"><span> ЗАПИСАТИСЬ НА ПРИЙОМ</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <h3 class="gallery_title">ФОТОГАЛЕРЕЯ</h3>
+      <div class="gallery_container">
+        <div>
+          <div ><img class="gallery_photo img-fluid" src="images/gallery/doctor_with_dog_1.jpg" alt="doctor with dog"></div>
+          <div> <img class="gallery_photo img-fluid" src="images/gallery/doctor_with_dog_2.jpg" alt="doctor with dog"></div>
+          <div> <img class="gallery_photo hidden_photo img-fluid" src="images/gallery/doctor_with_dog_3.jpg" alt="doctor with dog"></div>    
+        </div>
+        <div class="right">
+          <div> <img class="gallery_photo img-fluid" src="images/gallery/doctor_with_dog_4.jpg" alt="doctor with dog"></div>
+          <div> <img class="gallery_photo img-fluid" src="images/gallery/doctor_with_dog_5.jpg" alt="doctor with dog"></div>
+          <div> <img class="gallery_photo img-fluid"src="images/gallery/doctor_with_dog_6.jpg" alt="doctor with dog"></div>
+        </div>
+      </div>
+      <p class="gallery_btn">Більше фото</p>
+    </section>
+    <section class="contacts" id="contacts">
+      <h3 class="title">КОНТАКТИ</h3>
+      <div class="container">
+        <div class="phone-numbers">
+          <div>
+            <img class="phone_icon" src="images/phone-call-button (2).png" alt="" />
+          </div>
+          <div>
+            <a href="tel:+380322536317">+380322536317</a> <br />
+            <a class="second_phone" href="tel:+380949938317">+380949938317</a>
+          </div>
+        </div>
+
+        <div class="address">
+          <div>
+            <img class="map_icon" src="images/map-placeholder (2).png" alt="" />
+          </div>
+          <div>
+            <span>
+              м. Львів вул.Київська, 17 <br />
+              перехрестя вулиць <br />
+              Київської та Єфремова
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hours_container">
+          <div>
+            <img class="clock_icon" src="images/clock_icon.png" alt="" />
+          </div>
+          <div class="work_hours">
+            <span>
+              Пн-Пт 10:00-19:00 <br />
+              Субота 10:00-17:00 <br />
+              Неділя вихідний <br />
+            </span>
+          </div>
+        </div>
+        <div class="email_container">
+          <div>
+            <img class="email_icon" src="images/mail_icon.png" alt="" />
+          </div>
+          <div class="email">
+            <a href="mailto:zagavet@gmail.com">zagavet@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="pop-up_gallery hide">
+        <div class="pop-up_close_container">
+        <h6 class="pop-up_close">&#10006;</h6>
+      </div>
+          <div class="pop-up_img_container">
+            <img class="pop-up_img" src="images/gallery/doctor_with_dog_1.jpg" alt="doctor with dog">
+          </div>
+      
+      </div>
+    </section>
+  
+</main>
+  <script src="index.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script> -->
+    </div>
+  </body>
+</html>
