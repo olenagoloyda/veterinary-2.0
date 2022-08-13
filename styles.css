@@ -50,6 +50,12 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+	height: 100%;
+	min-width: 320px;
+}
+
 a {
     text-decoration: none;
 }
@@ -60,6 +66,7 @@ li {
 
 [class*="__container"] {
     margin: 0 auto;
+    
 }
 
 
@@ -80,7 +87,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     z-index: 2;
 }
 /* ----------------------------- */
@@ -91,13 +98,20 @@ body {
     background-image: url(images/header/background-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 253px;
-    padding-bottom: 351px;
-    /* height: 100%; */
+    background-position:center;
+    padding-top: 30%;
+    padding-bottom: 25%; 
+    height: 100%;
 }
 
 .first_page__logo {
-    width: 481px;
+    width: 50%;
+}
+
+@media(max-width:687px){
+    .first_page{
+        display: none;
+    }
 }
 /* -------------------------- */
 .header__main {
@@ -105,12 +119,26 @@ body {
     background-size: 61%;
     background-repeat: no-repeat;
     background-position: right;
-    /* height: 600px; */
     position: relative;
     background-color:#191613;
 }
 /* ---------------------------- */
+@media(max-width:687px){
+    .menu_container{
+        display: none;
+    }
+    .phone_container{
+        display: none;
+    }
+}
+@media(min-width:688px){
+    .header_menu_container_mobile{
+        display: none;
+    }
+}
+
 .header__menu__container {
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -118,6 +146,7 @@ body {
     background-color:#7683900b;
     padding-bottom :11px;
     margin-bottom: 75px;
+    padding-right: 20px;
 }
 .logo_header{
     padding-left: 49px;
@@ -128,16 +157,26 @@ body {
     padding-bottom: 5px;
     align-items: flex-end;
 }
+@media(max-width:965px){
+    .menu_desktop {
+        gap: 34px;
+    } 
+    .menu_desktop a {
+        font-size: 16px;
+    }
 
+    .header__menu__container {
+        height: 64px;
+        padding-bottom :7px;
+        margin-bottom: 55px;
+        padding-right: 0;
+    }
+}
 .menu_desktop a {
     font-size: 18px;
     text-transform: uppercase;
     color: white;
     line-height: 1.36;
-}
-.menu_desktop a{
-    font-size: 18px;
-    text-transform: uppercase;
 }
 
 .first_link{
@@ -145,6 +184,7 @@ body {
 }
 
 .phone_container{
+    align-self:flex-end;
     border-bottom:4px solid var(--brand-orange-color);
 }
 .phone_container a{
@@ -155,10 +195,92 @@ body {
     padding-left: 18px;
 }
 
-.phone_icon{
+.phone_icon img{
     width: 22px;
-    padding-bottom: 10px;
 }
+@media(max-width:815px){
+    .phone_container{
+       display: none;
+    } 
+    .menu_container{
+        margin-right: 80px;
+    }
+}
+@media(max-width:915px){
+    .phone_icon{
+        width: 18px;
+        padding-bottom: 5px;
+    }
+    .phone_container{
+        border-bottom:2px solid var(--brand-orange-color);
+    }
+    .phone_container a{
+        font-size: 20px;
+        line-height: 1.37;
+        padding-left: 10px;
+    }
+}
+.menu_btn {
+    width: 50px;
+    height: 50px;
+}
+
+.menu_btn span {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    color: white;
+    position: absolute;
+    top: 5%;
+    right: 5;
+    transition: all ease-out 0.3s;
+}
+
+.menu_btn span:nth-of-type(2) {
+    top: calc(5% - 5px);
+}
+
+.menu_btn span:nth-of-type(3) {
+    top: calc(5% + 5px);
+}
+
+.menu_btn.active span:first-of-type {
+    display: none;
+}
+
+.menu_btn.active span:nth-of-type(2) {
+    top: 45px;
+    transform: rotate(45deg);
+}
+
+.menu_btn.active span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 45px;
+}
+
+.menu {
+    padding-right: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+}
+
+.menu.hide {
+    display: none;
+}
+
+.menu a,
+.menu li {
+    font-family: 'Open Sans Condensed bold';
+    font-size: 30px;
+    color: var(--brand-orange-color);
+    padding-left: 5px;
+    padding-top: 45px;
+    list-style: none;
+    text-decoration: none;
+}
+
 /* ------------------------------ */
 .homepage_content_container{
     display: flex;
@@ -189,3 +311,4 @@ letter-spacing: 2%;
 h1 span{
     color:var(--brand-orange-color);
 }
+
