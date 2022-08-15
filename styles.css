@@ -88,7 +88,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    max-height: 100%;
+    height: 100%;
     z-index: 2;
 }
 
@@ -124,6 +124,7 @@ body {
     background-position: right;
     position: relative;
     background-color: #191613;
+    height: 100%;
 }
 @media(max-width:684px) {
     .header__main {
@@ -132,6 +133,14 @@ body {
         background-repeat: no-repeat;
         background-position: right;
         position: relative;
+    }
+}
+@media(max-width:450px) {
+    .header__main {
+        background-repeat: no-repeat;
+        background-position:center;
+        position: relative;
+        background-size:cover;
     }
 }
 /* ---------------------------- */
@@ -440,12 +449,10 @@ h1 span {
 }
 @media(max-width:450px) {
     .button_main {
-        text-align: center;
         width: 180px;
         height: 47px;
         padding-top: 13px;
-        margin-bottom: 120px;
-        margin-top: 70px;
+        margin-bottom: 30%;
     } 
 
     .open_modal {
@@ -496,7 +503,7 @@ h1 span {
 @media(max-width:450px) {
     .p_main {
         font-size: 20px;
-        margin-top: 105px;
+        margin-top: 35%;
         margin-bottom: 0;
     }
     h1 {
