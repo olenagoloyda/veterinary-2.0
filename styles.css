@@ -118,7 +118,7 @@ body {
 
 /* -------------------------- */
 .header__main {
-    background-image: -webkit-linear-gradient(rgba(8, 11, 15, 0.788), rgba(18, 22, 28, 0.842)), url(images/background_img_mobile.png);
+    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/background_img_mobile.png);
     background-size: 61%;
     background-repeat: no-repeat;
     background-position: right;
