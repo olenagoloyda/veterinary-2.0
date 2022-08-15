@@ -1,6 +1,6 @@
 const menuBtn = document.querySelector(".menu_btn");
 const menu = document.querySelector(".menu");
-const homepageContent = document.querySelector(".homepage_content");
+const homepageContent = document.querySelector(".homepage_content_container");
 const header = document.querySelector(".header");
 menuBtn.addEventListener("click", showMenu);
 
