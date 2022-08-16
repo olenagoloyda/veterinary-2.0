@@ -1,13 +1,16 @@
 const menuBtn = document.querySelector(".menu_btn");
 const menu = document.querySelector(".menu");
 const homepageContent = document.querySelector(".homepage_content_container");
-const header = document.querySelector(".header");
+const header = document.querySelector(".logo_header");
 menuBtn.addEventListener("click", showMenu);
 
 function showMenu() {
     menu.classList.toggle("hide");
     homepageContent.classList.toggle("hide");
     menuBtn.classList.toggle("active");
+    console.log(menuBtn);
+    console.log(homepageContent);
+    console.log(menu);
   }
 
 const galleryBtn = document.querySelector('.gallery_btn'),
