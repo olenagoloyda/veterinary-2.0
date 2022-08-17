@@ -4,6 +4,8 @@ const homepageContent = document.querySelector(".homepage_content_container");
 const header = document.querySelector(".logo_header");
 menuBtn.addEventListener("click", showMenu);
 
+
+
 function showMenu() {
     menu.classList.toggle("hide");
     homepageContent.classList.toggle("hide");
