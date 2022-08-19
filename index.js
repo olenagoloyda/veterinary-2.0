@@ -4,38 +4,32 @@ const homepageContent = document.querySelector(".homepage_content_container");
 const header = document.querySelector(".logo_header");
 const servicesMenuBtn = document.querySelector('.services_menu_content');
 const servicesContent = document.querySelector('.services_content_container');
-servicesMenuBtn.addEventListener('click', removeContent);
 const servicesContentList = document.querySelectorAll('.services_content');
+menuBtn.addEventListener("click", showMenu);
 
-console.log(servicesContentList);
-function removeContent(e){
-    servicesContentList.forEach(item=>item.classList.remove('active'));
-    showServicesContent(e);
-}
+servicesMenuBtn.addEventListener('click',showServicesContent);
+
 
 function showServicesContent(e){
+    const servicesMenuButtons =document.querySelectorAll('.services_menu');
+    let targetElementClass=e.target.classList.value;
+    let targetElement=e.target;
     let btnId = e.target.id;
     let sectionName = btnId.slice(0,-5);
-let actualContent = document.querySelector(`#${sectionName}_content`);
-actualContent.classList.add('active');
+    let actualContent = document.querySelector(`#${sectionName}_content`);
 
-
-
-    console.log(actualContent);
+    if (targetElementClass == 'services_menu'){
+    servicesContentList.forEach(item=>item.classList.remove('active'));
+    servicesMenuButtons.forEach(button=>button.classList.remove('active'));
+    targetElement.classList.add('active');
+    actualContent.classList.add('active');}
 }
-
-
-
-menuBtn.addEventListener("click", showMenu);
 
 
 function showMenu() {
     menu.classList.toggle("hide");
     homepageContent.classList.toggle("hide");
     menuBtn.classList.toggle("active");
-    console.log(menuBtn);
-    console.log(homepageContent);
-    console.log(menu);
   }
 
 const galleryBtn = document.querySelector('.gallery_btn'),
