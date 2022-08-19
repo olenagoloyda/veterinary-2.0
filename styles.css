@@ -998,11 +998,32 @@ display: none;
 }
 .apotheke_content{
     display: block;
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 100%;
+    /* margin-right: -200px; */
 }
 .apotheke_content p{
-padding-top: 30px;
+padding-top: 0;
+margin-top: 0;
 width: 700px;
-height: 190px;
+height: 100px;
+}
+.apotheke_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.apotheke_content img{
+width: 415px;
+display: block;
+margin-right: 20px;
+margin-left: 90%;
+}
+
+.button_apotheke{
+   margin: 0;
 }
 
 .services_content_block{
@@ -1025,6 +1046,9 @@ display: none;
 
 .button_services{
     margin-top: 85px;
+}
+.button_services.hide_button_services{
+   display: none;
 }
 
 @media(max-width:1280px){
@@ -1127,7 +1151,7 @@ display: none;
     .apotheke_content p{
         padding-top: 10px;
         width: 500px;
-        height: 190px;
+        height: 130px;
         }
 }
 @media(min-width:592px){

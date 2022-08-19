@@ -8,7 +8,7 @@ const apothekeContent = document.querySelector('.apotheke_content');
 const servicesContentList = document.querySelectorAll('.services_content');
 const clinicBtn = document.querySelector('.clinic_section');
 const apothekeBtn = document.querySelector('.apotheke_section');
-
+const btnServices = document.querySelector('.button_services');
 
 menuBtn.addEventListener("click", showMenu);
 servicesMenuBtn.addEventListener('click',showServicesContent);
@@ -21,6 +21,7 @@ function changeApothekeClass(e){
     servicesMenuBtn.classList.toggle('hide_menu_content');
     servicesContent.classList.toggle('hide_services_content'); 
     apothekeContent.classList.toggle('hide_apotheke_content'); 
+    btnServices.classList.toggle('hide_button_services');
 }
 
 function changeClinicClass(e){
@@ -29,6 +30,7 @@ function changeClinicClass(e){
     servicesMenuBtn.classList.toggle('hide_menu_content'); 
     servicesContent.classList.toggle('hide_services_content'); 
     apothekeContent.classList.toggle('hide_apotheke_content'); 
+    btnServices.classList.toggle('hide_button_services');
 }
 
 function showServicesContent(e){
