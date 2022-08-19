@@ -709,51 +709,52 @@ h1 span {
     .doctors_specialization_section {
         margin-top: 10px;
     }
- 
+
     .about_doctors {
         margin-top: 15px;
     }
 }
+
 @media(max-width:940px) {
     .container_buttons_carousel {
         margin: 20px 40px 0 40px;
         height: 70px;
     }
-    
+
     .doctors_carousel_content {
         margin-top: 102px;
         margin-left: 54px;
         margin-right: 54px;
     }
-    
+
     .doctors_carousel_content_header {
         margin-left: 30px;
         bottom: 36px;
         padding-bottom: 0px;
     }
-    
+
     .doctors_photo {
         width: 280px;
         max-height: 280px;
     }
-      
+
     .doctors_title {
-        height:fit-content;
+        height: fit-content;
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    
+
     .about_doctor_container {
         margin-left: -210px;
         margin-top: 0;
         padding-right: 15px;
         height: 300px;
     }
-    
+
     .doctors_specialization_section {
         margin-top: 10px;
     }
-    
+
     .about_doctors {
         margin-top: 10px;
     }
@@ -764,15 +765,16 @@ h1 span {
         margin-top: 72px;
         margin-left: 72px;
         margin-right: 72px;
-        display:block
+        display: block
     }
 
     .doctors_photo {
         width: 200px;
-        max-height:250px;
+        max-height: 250px;
         position: relative;
         bottom: 20px;
     }
+
     .doctors_carousel_content_header {
         margin-left: 20px;
         position: unset;
@@ -796,8 +798,9 @@ h1 span {
     .doctors_specialization_section {
         margin-top: 10px;
     }
- 
+
 }
+
 @media(max-width:570px) {
     .container_buttons_carousel {
         margin: 0;
@@ -815,17 +818,19 @@ h1 span {
         margin-right: 30px;
         margin-top: 50px;
     }
+
     .doctors_carousel_content_header {
         margin-left: 15px;
     }
+
     .doctors_photo {
         width: 150px;
-        max-height:150px;
-        bottom:15px
+        max-height: 150px;
+        bottom: 15px
     }
 
     .doctors_name {
-       font-size: 12px;
+        font-size: 12px;
     }
 
     .about_doctor_container {
@@ -840,18 +845,18 @@ h1 span {
         margin-top: 0px;
         font-size: 12px;
     }
- 
+
     .about_doctors {
         margin-top: 10px;
         font-size: 1px;
     }
 
-    .carousel-control-prev-icon{
+    .carousel-control-prev-icon {
         position: relative;
-        right:10px;
+        right: 10px;
     }
 
-    .carousel-control-next-icon{
+    .carousel-control-next-icon {
         position: relative;
         left: 10px;
     }
@@ -863,12 +868,14 @@ h1 span {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
-.quote_block{
+
+.quote_block {
     margin: 0 auto;
     width: 70%;
 }
+
 .quote_text {
     display: block;
     margin: 0 auto;
@@ -880,40 +887,42 @@ h1 span {
 
 .author {
     font-family: 'Roboto Condensed', sans-serif;
-    padding-right:20px;
+    padding-right: 20px;
     padding-top: 125px;
     font-size: 25px;
     text-align: end;
 }
-@media(max-width:650px){
-    .quote_block{
+
+@media(max-width:650px) {
+    .quote_block {
         width: 85%;
     }
+
     .quote_text {
         text-align: left;
         font-size: 22px;
         line-height: 1.6;
     }
-    
-    
+
+
     .author {
         font-family: 'Roboto Condensed', sans-serif;
-        padding-right:20px;
+        padding-right: 20px;
         padding-top: 45px;
         font-size: 20px;
         text-align: end;
     }
 }
 
-.services_block{
-    background-color:var(--brand-gray-color);
+.services_block {
+    background-color: var(--brand-gray-color);
 }
 
-.services_main{
+.services_main {
     padding: 110px 30px 20px 188px;
 }
 
-.p_services{
+.p_services {
     margin-top: 62px;
     margin-bottom: 82px;
     font-size: 18px;
@@ -925,8 +934,9 @@ h1 span {
     min-width: 100%;
     margin-right: 160px;
 }
+
 .clinic_section {
-    background-color:var(--brand-dark-gray-color);
+    background-color: var(--brand-dark-gray-color);
     flex: 1.5;
     height: 80px;
     margin-top: -10px;
@@ -935,8 +945,9 @@ h1 span {
     font-size: 25px;
     cursor: pointer;
 }
+
 .clinic_section.hide_clinic {
-    background-color:var(--brand-button-dark-gray-color);
+    background-color: var(--brand-button-dark-gray-color);
     flex: 1;
     height: 70px;
     position: relative;
@@ -946,22 +957,24 @@ h1 span {
     padding-top: 25px;
     font-size: 25px;
     margin-left: 130px;
-    color:#C0C2C9 ; 
+    color: #C0C2C9;
     cursor: pointer;
 }
+
 .apotheke_section {
-    background-color:var(--brand-button-dark-gray-color);
+    background-color: var(--brand-button-dark-gray-color);
     flex: 1;
     text-align: center;
     padding-top: 20px;
     font-size: 25px;
     margin-right: 130px;
-    color:#C0C2C9 ;
+    color: #C0C2C9;
     cursor: pointer;
 }
+
 .apotheke_section.show_apotheke {
     margin-right: 0;
-    background-color:var(--brand-dark-gray-color) !important;
+    background-color: var(--brand-dark-gray-color) !important;
     flex: 1.5;
     height: 80px;
     margin-top: 10px;
@@ -970,88 +983,102 @@ h1 span {
     font-size: 25px;
     cursor: pointer;
 }
+
 .services_desktop_content_container {
-    background-color:var(--brand-dark-gray-color);
+    background-color: var(--brand-dark-gray-color);
     padding-top: 50px;
     display: flex;
 }
+
 .services_menu_content {
-padding-bottom: 20px;
-padding-left: 100px;
-}
-.services_menu_content.hide_menu_content {
-display: none;
+    padding-bottom: 20px;
+    padding-left: 100px;
 }
 
-.services_menu{
-    padding-top: 40px;
-}
-.services_menu:hover{
-    cursor: pointer;
-    color:var(--brand-orange-color);
-}
-.services_menu.active{
-    color:#C0C2C9;
-}
-.apotheke_content.hide_apotheke_content{
+.services_menu_content.hide_menu_content {
     display: none;
 }
-.apotheke_content{
+
+.services_menu {
+    padding-top: 40px;
+}
+
+.services_menu:hover {
+    cursor: pointer;
+    color: var(--brand-orange-color);
+}
+
+.services_menu.active {
+    color: #C0C2C9;
+}
+
+.apotheke_content.hide_apotheke_content {
+    display: none;
+}
+
+.apotheke_content {
     display: block;
     margin-top: 100px;
     margin-left: 300px;
     width: 100%;
     /* margin-right: -200px; */
 }
-.apotheke_content p{
-padding-top: 0;
-margin-top: 0;
-width: 700px;
-height: 100px;
+
+.apotheke_content p {
+    padding-top: 0;
+    margin-top: 0;
+    width: 700px;
+    height: 100px;
 }
-.apotheke_footer{
+
+.apotheke_footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-right: 10px;
-}
-.apotheke_content img{
-width: 415px;
-display: block;
-margin-right: 20px;
-margin-left: 90%;
 }
 
-.button_apotheke{
-   margin: 0;
+.apotheke_content img {
+    width: 415px;
+    display: block;
+    margin-right: 40px;
+    margin-left: 87%;
 }
 
-.services_content_block{
+.button_apotheke {
+    margin: 0;
+}
+
+.services_content_block {
     height: 190px;
 }
+
 .services_content_container {
     margin-top: 60px;
     margin-left: 320px;
     max-width: 40%;
 }
+
 .services_content_block.hide_services_content {
-display: none;
+    display: none;
 }
+
 .services_content {
     display: none;
 }
-.services_content.active{
+
+.services_content.active {
     display: block;
 }
 
-.button_services{
+.button_services {
     margin-top: 85px;
 }
-.button_services.hide_button_services{
-   display: none;
+
+.button_services.hide_button_services {
+    display: none;
 }
 
-@media(max-width:1280px){
+@media(max-width:1280px) {
     .services_content_container {
         margin-top: 60px;
         margin-left: 280px;
@@ -1059,31 +1086,35 @@ display: none;
         max-width: 60%;
     }
 }
-@media(max-width:1100px){
-    .services_main{
+
+@media(max-width:1100px) {
+    .services_main {
         padding: 110px 30px 20px 88px;
     }
+
     .services_content_container {
         margin-top: 60px;
         margin-left: 80px;
         margin-right: 50px;
         max-width: 60%;
     }
-    .apotheke_content img{
+
+    .apotheke_content img {
         max-width: 310px;
         position: absolute;
         left: 70%;
-        }
+    }
 }
-@media(max-width:976px){
-    .services_main{
+
+@media(max-width:976px) {
+    .services_main {
         padding: 80px 50px 20px 58px;
     }
 
-    .p_services{
+    .p_services {
         width: auto;
     }
-    
+
     .clinic_section {
         height: 60px;
     }
@@ -1092,28 +1123,30 @@ display: none;
         margin-right: 80px;
     }
 
-    .apotheke_content p{
+    .apotheke_content p {
         padding-top: 30px;
         width: 600px;
         height: 190px;
-        }
+    }
 
 
     .services_desktop_content_container {
         padding-top: 30px;
     }
+
     .services_menu_content {
-    padding-bottom: 20px;
-    padding-left: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
     }
-    
-    .services_menu{
+
+    .services_menu {
         padding-top: 40px;
     }
 
-    .services_content_block{
+    .services_content_block {
         height: 210px;
     }
+
     .services_content_container {
         margin-top: 40px;
         margin-left: 120px;
@@ -1121,85 +1154,214 @@ display: none;
         max-width: 60%;
     }
 }
-@media(max-width:768px){
-    .services_main{
+
+@media(max-width:768px) {
+    .services_main {
         padding: 50px 50px 20px 30px;
     }
-    
+
     .apotheke_section {
         margin-right: 50px;
     }
 
     .services_menu_content {
-    padding-bottom: 20px;
-    padding-left: 15px;
-    font-size: 14px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        font-size: 14px;
     }
-    .services_content_block{
+
+    .services_content_block {
         height: 210px;
         font-size: 12px;
     }
-    .services_content p{
+
+    .services_content p {
         font-size: 15px;
     }
+
     .services_content_container {
         margin-top: 40px;
         margin-left: 90px;
         margin-right: 40px;
         max-width: 60%;
     }
-    .apotheke_content p{
+
+    .apotheke_content p {
         padding-top: 10px;
         width: 500px;
         height: 130px;
-        }
+    }
 }
-@media(min-width:592px){
-    .services_mobile_container{
+
+@media(min-width:592px) {
+    .services_mobile_container {
         display: none;
     }
 }
-@media(max-width:591px){
-    .services_main{
+
+@media(max-width:591px) {
+    .services_main {
         padding: 40px 50px 20px 20px;
     }
-    
-    .p_services{
+
+    .p_services {
         margin-top: 22px;
         margin-bottom: 42px;
         font-size: 16px;
         width: auto;
     }
-   .services_desktop_container{
-    display: none;
-   }
-.services_mobile_container{
-    display: block;
-    background-color:var(--brand-button-dark-gray-color);
-    padding-left: 15px;
-    padding-top: 40px;
-}
-.services_mobile_container p{
-font-size: 14px;
+
+    .services_desktop_container {
+        display: none;
+    }
+
+    .services_mobile_container {
+        display: block;
+        background-color: var(--brand-button-dark-gray-color);
+        padding-left: 15px;
+        padding-top: 40px;
+    }
+
+    .services_mobile_container p {
+        font-size: 14px;
+    }
+
+    .services_border {
+        padding: 10px;
+        margin-right: 15px;
+        border: 1px solid rgba(59, 59, 59, 0.316);
+        border-radius: 3px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-family: 'Open Sans Condensed bold';
+        font-size: 23px;
+        padding: 15px 0;
+    }
+
+    .button_services {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
 }
 
-.services_border {
-    padding: 10px;
-    margin-right: 15px;
-    border: 1px solid rgba(59, 59, 59, 0.316);
-    border-radius: 3px;
+.gallery {
+    background-color: var(--brand-gray-color);
+    padding-top: 20px;
 }
 
-h4 {
-    text-transform: uppercase;
+.gallery_title {
+    text-align: center;
     font-family: 'Open Sans Condensed bold';
-    font-size: 23px;
-    padding: 15px 0;
+    font-size: 58px;
+    color: #2C2625;
+    padding: 40px 0 30px 0px;
 }
 
-.button_services{
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
+.gallery_container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
+.gallery_container img {
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 430px;
+    height: auto;
+}
+
+.hidden_photo {
+    display: none;
+}
+
+.right img {
+    width: 423px;
+    padding-left: 0;
+}
+
+
+.gallery_btn{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ @media(max-width:769px){
+
+    .gallery_container img {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 430px;
+        height: auto;
+    }
+     
+    .right img {
+        width: 437px;
+        padding-left: 0;
+    }
+}
+ @media(max-width:510px){
+
+    .gallery_title {
+        text-align: left;
+        font-size: 47px;
+        padding: 20px 0 30px 20px;
+    }
+    .gallery_container img {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 280px;
+        height: auto;
+    }
+     
+    .right img {
+        width: 280px;
+        padding-left: 0;
+    }
+}
+
+.pop-up_gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    background: #6d7b88c1;
+}
+
+.pop-up_photo {
+    height: 300px;
+}
+
+.pop-up_close_container {
+    padding-bottom: 10px;
+    padding-right: 10px;
+    align-self: flex-end;
+}
+
+.pop-up_gallery.hide {
+    display: none;
+}
+
+.pop-up_img {
+    width: 100%;
+}
+
+.pop-up_close {
+    text-align: end;
+    color: var(--brand-gray-color);
+    font-size: 28px;
+    cursor: pointer;
+}
