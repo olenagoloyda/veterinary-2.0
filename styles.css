@@ -933,6 +933,21 @@ h1 span {
     text-align: center;
     padding-top: 30px;
     font-size: 25px;
+    cursor: pointer;
+}
+.clinic_section.hide_clinic {
+    background-color:var(--brand-button-dark-gray-color);
+    flex: 1;
+    height: 70px;
+    position: relative;
+    top: 20px;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 25px;
+    margin-left: 130px;
+    color:#C0C2C9 ; 
+    cursor: pointer;
 }
 .apotheke_section {
     background-color:var(--brand-button-dark-gray-color);
@@ -941,15 +956,19 @@ h1 span {
     padding-top: 20px;
     font-size: 25px;
     margin-right: 130px;
+    color:#C0C2C9 ;
+    cursor: pointer;
 }
-.apotheke_section {
+.apotheke_section.show_apotheke {
+    margin-right: 0;
     background-color:var(--brand-dark-gray-color) !important;
     flex: 1.5;
     height: 80px;
-    margin-top: -10px;
+    margin-top: 10px;
     text-align: center;
     padding-top: 30px;
     font-size: 25px;
+    cursor: pointer;
 }
 .services_desktop_content_container {
     background-color:var(--brand-dark-gray-color);
@@ -959,6 +978,9 @@ h1 span {
 .services_menu_content {
 padding-bottom: 20px;
 padding-left: 100px;
+}
+.services_menu_content.hide_menu_content {
+display: none;
 }
 
 .services_menu{
@@ -971,6 +993,18 @@ padding-left: 100px;
 .services_menu.active{
     color:#C0C2C9;
 }
+.apotheke_content.hide_apotheke_content{
+    display: none;
+}
+.apotheke_content{
+    display: block;
+}
+.apotheke_content p{
+padding-top: 30px;
+width: 700px;
+height: 190px;
+}
+
 .services_content_block{
     height: 190px;
 }
@@ -978,6 +1012,9 @@ padding-left: 100px;
     margin-top: 60px;
     margin-left: 320px;
     max-width: 40%;
+}
+.services_content_block.hide_services_content {
+display: none;
 }
 .services_content {
     display: none;
@@ -1008,7 +1045,11 @@ padding-left: 100px;
         margin-right: 50px;
         max-width: 60%;
     }
-
+    .apotheke_content img{
+        max-width: 310px;
+        position: absolute;
+        left: 70%;
+        }
 }
 @media(max-width:976px){
     .services_main{
@@ -1026,6 +1067,13 @@ padding-left: 100px;
     .apotheke_section {
         margin-right: 80px;
     }
+
+    .apotheke_content p{
+        padding-top: 30px;
+        width: 600px;
+        height: 190px;
+        }
+
 
     .services_desktop_content_container {
         padding-top: 30px;
@@ -1076,6 +1124,11 @@ padding-left: 100px;
         margin-right: 40px;
         max-width: 60%;
     }
+    .apotheke_content p{
+        padding-top: 10px;
+        width: 500px;
+        height: 190px;
+        }
 }
 @media(min-width:592px){
     .services_mobile_container{

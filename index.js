@@ -3,12 +3,33 @@ const menu = document.querySelector(".menu");
 const homepageContent = document.querySelector(".homepage_content_container");
 const header = document.querySelector(".logo_header");
 const servicesMenuBtn = document.querySelector('.services_menu_content');
-const servicesContent = document.querySelector('.services_content_container');
+const servicesContent = document.querySelector('.services_content_block');
+const apothekeContent = document.querySelector('.apotheke_content');
 const servicesContentList = document.querySelectorAll('.services_content');
+const clinicBtn = document.querySelector('.clinic_section');
+const apothekeBtn = document.querySelector('.apotheke_section');
+
+
 menuBtn.addEventListener("click", showMenu);
-
 servicesMenuBtn.addEventListener('click',showServicesContent);
+clinicBtn.addEventListener('click', changeClinicClass);
+apothekeBtn.addEventListener('click',changeApothekeClass);
 
+function changeApothekeClass(e){
+    e.target.classList.toggle('show_apotheke');
+    clinicBtn.classList.toggle('hide_clinic'); 
+    servicesMenuBtn.classList.toggle('hide_menu_content');
+    servicesContent.classList.toggle('hide_services_content'); 
+    apothekeContent.classList.toggle('hide_apotheke_content'); 
+}
+
+function changeClinicClass(e){
+    apothekeBtn.classList.toggle('show_apotheke');
+    e.target.classList.toggle('hide_clinic');
+    servicesMenuBtn.classList.toggle('hide_menu_content'); 
+    servicesContent.classList.toggle('hide_services_content'); 
+    apothekeContent.classList.toggle('hide_apotheke_content'); 
+}
 
 function showServicesContent(e){
     const servicesMenuButtons =document.querySelectorAll('.services_menu');
@@ -32,30 +53,30 @@ function showMenu() {
     menuBtn.classList.toggle("active");
   }
 
-const galleryBtn = document.querySelector('.gallery_btn'),
-    hidenPhoto = document.querySelectorAll('.hidden_photo'),
-    gallery = document.querySelector('.gallery_container'),
-    popUpContainer = document.querySelector('.pop-up_gallery'),
-    closePopUP = document.querySelector('.pop-up_close'),
-    popUpContent = document.querySelector('.pop-up_img'),
-    galleryPhoto =document.querySelectorAll('.gallery_photo');
+// const galleryBtn = document.querySelector('.gallery_btn'),
+//     hidenPhoto = document.querySelectorAll('.hidden_photo'),
+//     gallery = document.querySelector('.gallery_container'),
+//     popUpContainer = document.querySelector('.pop-up_gallery'),
+//     closePopUP = document.querySelector('.pop-up_close'),
+//     popUpContent = document.querySelector('.pop-up_img'),
+//     galleryPhoto =document.querySelectorAll('.gallery_photo');
 
 
 
-gallery.addEventListener('click', showPopUp);
-galleryBtn.addEventListener('click', showMorePhoto);
-closePopUP.addEventListener('click',closePop);
+// gallery.addEventListener('click', showPopUp);
+// galleryBtn.addEventListener('click', showMorePhoto);
+// closePopUP.addEventListener('click',closePop);
 
-function showPopUp(e){
-popUpContent.src = e.target.attributes.src.nodeValue;    
-    console.log(popUpContainer);
-popUpContainer.classList.remove('hide');
-}
+// function showPopUp(e){
+// popUpContent.src = e.target.attributes.src.nodeValue;    
+//     console.log(popUpContainer);
+// popUpContainer.classList.remove('hide');
+// }
 
-function closePop(){
-    popUpContainer.classList.add('hide');
-}
+// function closePop(){
+//     popUpContainer.classList.add('hide');
+// }
 
-function showMorePhoto(){
-hidenPhoto.forEach(photo => photo.classList.toggle('hidden_photo'));
-}
+// function showMorePhoto(){
+// hidenPhoto.forEach(photo => photo.classList.toggle('hidden_photo'));
+// }
