@@ -482,7 +482,7 @@ h1 span {
     display: flex;
     flex-direction: column;
     padding-right: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 
 }
 
@@ -687,6 +687,17 @@ h1 span {
     margin-top: 10px;
 }
 
+.carousel-control-prev-icon {
+    /* width: 40px; */
+    position: relative;
+    right: 20px;
+}
+
+.carousel-control-next-icon {
+    position: relative;
+    left: 20px;
+}
+
 @media(max-width:1232px) {
     .doctors_carousel_content_header {
         margin-left: 40px;
@@ -864,11 +875,10 @@ h1 span {
 
 .quote {
     background-color: #DBAE59;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .quote_block {
@@ -888,7 +898,7 @@ h1 span {
 .author {
     font-family: 'Roboto Condensed', sans-serif;
     padding-right: 20px;
-    padding-top: 125px;
+    padding-top: 45px;
     font-size: 25px;
     text-align: end;
 }
@@ -1021,6 +1031,7 @@ h1 span {
     margin-top: 100px;
     margin-left: 300px;
     width: 100%;
+    height: 320px;
     /* margin-right: -200px; */
 }
 
@@ -1046,6 +1057,7 @@ h1 span {
 
 .button_apotheke {
     margin: 0;
+    margin-bottom: 80px;
 }
 
 .services_content_block {
@@ -1122,7 +1134,9 @@ h1 span {
     .apotheke_section {
         margin-right: 80px;
     }
-
+.apotheke_content{
+    margin-left: 150px;
+}
     .apotheke_content p {
         padding-top: 30px;
         width: 600px;
@@ -1185,10 +1199,12 @@ h1 span {
         margin-right: 40px;
         max-width: 60%;
     }
-
+    .apotheke_content{
+        margin-left: 70px;
+    }
     .apotheke_content p {
         padding-top: 10px;
-        width: 500px;
+        width: 550px;
         height: 130px;
     }
 }
@@ -1390,6 +1406,10 @@ h1 span {
     line-height: 1.3; 
     margin: 0;
 }
+.contacts_subcontainer{
+    display: flex;
+    gap: 130px;
+}
 
 .icons{
     width: 18px;
@@ -1427,6 +1447,9 @@ h1 span {
     .contacts_container{
         gap: 100px;
     }
+    .contacts_subcontainer{
+        gap: 100px;
+    }
 }
 @media(max-width:1026px){
 
@@ -1434,6 +1457,9 @@ h1 span {
         margin: 80px 40px 50px 40px;
     }
     .contacts_container{
+        gap: 80px;
+    }
+    .contacts_subcontainer{
         gap: 80px;
     }
 }
@@ -1456,14 +1482,94 @@ h1 span {
         display:flex;
         justify-content: center;
         gap: 60px;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .contacts a{
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .phone_decor{
         width: 250px;
     }
+}
+@media(max-width:815px){
+    .contacts{
+        padding-bottom: 50px;
+    }
+    
+    .contacts_section_container{
+        padding-top: 40px;
+    }
+    .contacts_container{
+        display:flex;
+        justify-content: space-around;
+        font-size: 14px;
+    }
+
+    .contacts_subcontainer{
+        display: block;
+    }
+    
+    .contacts a{
+        font-size: 14px;
+    }
+    
+    .phone_decor{
+        width: 250px;
+    }
+}
+
+@media(max-width:540px){
+    .contacts{
+        padding-bottom: 30px;
+    }
+    
+    .title_contacts{
+        padding-top: 60px;
+        padding-left: 10px;
+    }
+    .contacts_section_container{
+        border:none;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        /* margin: 80px 100px 50px 90px; */
+    }
+    .contacts_container{
+        justify-content: space-around;;
+        font-size: 12px;
+    }
+    .contacts_subcontainer{
+        display: block;
+    }
+    
+    .icons{
+        width: 15px;
+        position: relative;
+        right: 25px;
+        top: 19px;
+    }
+    .contacts a{
+        color:rgba(0, 0, 0, 0.842);
+        font-size: 13px;
+        line-height: 1.3;
+    }
+    
+    .phone_decor{
+    display: none;
+    }
+    .media_icons_container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .media_icons_container img{
+        width: 20px;
+    }
+}
+
+.map{
+width: 50%;
+height: 400px;
 }
