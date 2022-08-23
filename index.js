@@ -82,3 +82,11 @@ function closePop(){
 function showMorePhoto(){
 hidenPhoto.forEach(photo => photo.classList.toggle('hidden_photo'));
 }
+
+const map = L.map('map').setView([49.83329, 24.01095], 21);
+
+ const tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+
+const marker = L.marker([49.83305, 24.00928]).addTo(map);
+
