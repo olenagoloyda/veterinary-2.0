@@ -90,3 +90,12 @@ const map = L.map('map').setView([49.83329, 24.01095], 21);
 
 const marker = L.marker([49.83305, 24.00928]).addTo(map);
 
+
+const firstName = document.querySelector('#name'),
+lastName = document.querySelector('#last_name'),
+phoneNumber =document.querySelector('#phone_number');
+
+
+// function sendMail(res){
+//     alert('Повідомлення відправлено, очікуйте, ми вам зателефонуємо');
+// }
