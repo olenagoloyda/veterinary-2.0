@@ -1,5 +1,6 @@
 const menuBtn = document.querySelector(".menu_btn");
 const menu = document.querySelector(".menu");
+const menuBlock = document.querySelector('.menu');
 const homepageContent = document.querySelector(".homepage_content_container");
 const header = document.querySelector(".logo_header");
 const servicesMenuBtn = document.querySelector('.services_menu_content');
@@ -9,11 +10,34 @@ const servicesContentList = document.querySelectorAll('.services_content');
 const clinicBtn = document.querySelector('.clinic_section');
 const apothekeBtn = document.querySelector('.apotheke_section');
 const btnServices = document.querySelector('.button_services');
+const galleryBtn = document.querySelector('.gallery_btn'),
+    hidenPhoto = document.querySelectorAll('.hidden_photo'),
+    gallery = document.querySelector('.gallery_container'),
+    popUpContainer = document.querySelector('.pop-up_gallery'),
+    closePopUP = document.querySelector('.pop-up_close'),
+    popUpContent = document.querySelector('.pop-up_img'),
+    galleryPhoto =document.querySelectorAll('.gallery_photo');
+const map = L.map('map').setView([49.83329, 24.01095], 21);
+
+const tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+    
+const marker = L.marker([49.83305, 24.00928]).addTo(map);
+    
+
 
 menuBtn.addEventListener("click", showMenu);
+menuBlock.addEventListener('click', showMenu);
 servicesMenuBtn.addEventListener('click',showServicesContent);
 clinicBtn.addEventListener('click', changeClinicClass);
 apothekeBtn.addEventListener('click',changeApothekeClass);
+gallery.addEventListener('click', showPopUp);
+galleryBtn.addEventListener('click', showMorePhoto);
+closePopUP.addEventListener('click',closePop);
+
+function showtarget(e){
+    console.log(e.srcElement.classList);
+}
 
 function changeApothekeClass(e){
     e.target.classList.toggle('show_apotheke');
@@ -55,20 +79,6 @@ function showMenu() {
     menuBtn.classList.toggle("active");
   }
 
-const galleryBtn = document.querySelector('.gallery_btn'),
-    hidenPhoto = document.querySelectorAll('.hidden_photo'),
-    gallery = document.querySelector('.gallery_container'),
-    popUpContainer = document.querySelector('.pop-up_gallery'),
-    closePopUP = document.querySelector('.pop-up_close'),
-    popUpContent = document.querySelector('.pop-up_img'),
-    galleryPhoto =document.querySelectorAll('.gallery_photo');
-
-
-
-gallery.addEventListener('click', showPopUp);
-galleryBtn.addEventListener('click', showMorePhoto);
-closePopUP.addEventListener('click',closePop);
-
 function showPopUp(e){
 popUpContent.src = e.target.attributes.src.nodeValue;    
     console.log(popUpContainer);
@@ -83,19 +93,7 @@ function showMorePhoto(){
 hidenPhoto.forEach(photo => photo.classList.toggle('hidden_photo'));
 }
 
-const map = L.map('map').setView([49.83329, 24.01095], 21);
+  function resetForm(){
+alert('Good');
+}
 
- const tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
-
-const marker = L.marker([49.83305, 24.00928]).addTo(map);
-
-
-const firstName = document.querySelector('#name'),
-lastName = document.querySelector('#last_name'),
-phoneNumber =document.querySelector('#phone_number');
-
-
-// function sendMail(res){
-//     alert('Повідомлення відправлено, очікуйте, ми вам зателефонуємо');
-// }
