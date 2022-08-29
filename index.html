@@ -33,10 +33,10 @@
         </div>
         <div class="menu_container">
           <nav class="menu_desktop">
-            <li><a class="first_link" href="#">про нас</a></li>
-            <li><a href="#">послуги</a></li>
-            <li><a href="#">галерея</a></li>
-            <li><a href="#">контакти</a></li>
+            <li><a class="first_link" href="#about_us">про нас</a></li>
+            <li><a href="#services">послуги</a></li>
+            <li><a href="#gallery">галерея</a></li>
+            <li><a href="#contacts">контакти</a></li>
           </nav>
         </div>
         <div class="phone_container">
@@ -63,8 +63,10 @@
       <div class="homepage_links">
         <!-- <div class="languages_link">EN</div>  -->
         <div class="social-media_links">
-          <a href="#"> <img src="images/header/instagram-logo.png" alt="instagram logo"></a>
-          <a href=""> <img src="images/header/facebook-letter-logo.png" alt="facebook logo"></a>
+          <a href="https://www.instagram.com/zagavet_lviv/?hl=en" target="_blank"> <img
+              src="images/header/instagram-logo.png" alt="instagram logo"></a>
+          <a href="https://www.facebook.com/zagavet" target="_blank"> <img src="images/header/facebook-letter-logo.png"
+              alt="facebook logo"></a>
         </div>
       </div>
     </div>
@@ -439,7 +441,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <h3 class="gallery_title">ФОТОГАЛЕРЕЯ</h3>
         <div class="gallery_container">
           <div>
@@ -513,8 +515,10 @@
           </div>
           <img class="phone_decor" src="images/phone_decor.png" alt="phone decor">
           <div class="media_icons_container">
-            <a href=""><img src="images/facebook-logo_black.png" alt="facebook-logo_black"></a>
-            <a href=""><img src="images/instagram_logo_black.png" alt="instagram_logo_black"></a>
+            <a href="https://www.facebook.com/zagavet" target="_blank"><img src="images/facebook-logo_black.png"
+                alt="facebook-logo_black"></a>
+            <a href="https://www.instagram.com/zagavet_lviv/?hl=en" target="_blank"><img
+                src="images/instagram_logo_black.png" alt="instagram_logo_black"></a>
           </div>
         </div>
         <div class="pop-up_gallery hide">
@@ -529,31 +533,34 @@
       <section class="map_container">
         <div id="map"></div>
         <div class="contact_form">
-            <div class="form_container">
+          <div class="form_container">
             <h1 class="form_title">ЗАПИСАТИСЬ НА ПРИЙОМ</h1>
-            <form id="myform" onsubmit="emailjs.sendForm('service_tgxz7si', 'template_yoisubt', this); return false;" method="post">
-            <input type="text" name="name" placeholder="Ім'я"> <br>
-            <input type="text"  name="lastName"  placeholder="Прізвище" > <br>
-            <input type="text" name="phoneNumber"  placeholder="Контактний номер телефону"> <br>
-            <textarea name="message" id="message" cols="48" rows="10" placeholder="Причина звернення"></textarea>
-            <button type="submit" class="form_button">Записатись на прийом</button>
-           </form>
+            <form id="myform" onsubmit="emailjs.sendForm('service_tgxz7si', 'template_yoisubt', this).then(approveSending); return false;"
+              method="post">
+              <input type="text" name="name" placeholder="Ім'я"> <br>
+              <input type="text" name="lastName" placeholder="Прізвище"> <br>
+              <input type="text" name="phoneNumber" placeholder="Контактний номер телефону"> <br>
+              <textarea name="message" id="message" cols="48" rows="10" placeholder="Причина звернення"></textarea>
+              <button type="submit" class="form_button">Записатись на прийом</button>
+            </form>
+            </div>
+            <div class="aprove_send">
+              <h3 title_aprove_send>Дані відправлено!</h3>
+              <p class="p_aprove_send">Ми зателефонуємо Вам, щоб підібрати зручний час.</p>
+            </div>
+            </div>
       </section>
 
     </main>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-  </script> -->
   </div>
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-emailjs.init("ksUJkh3fb9SdGPV3q");
-})();
-</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("ksUJkh3fb9SdGPV3q");
+    })();
+  </script>
   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>

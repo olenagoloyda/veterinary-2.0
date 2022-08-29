@@ -1649,6 +1649,9 @@ h1 span {
     width: 460px;
     max-height: 513px;
 }
+.contact_form_hide{
+display: none;
+}
 
 .contact_form input {
     font-family: 'Open Sans Condensed bold';
@@ -1704,6 +1707,15 @@ h1 span {
 
 .form_button:hover {
     transform: scale(1.1);
+}
+
+.aprove_send{
+text-align: center;
+display: none;
+}
+
+.approve_send_show{
+    display: block;
 }
 
 @media(max-width:1190px) {

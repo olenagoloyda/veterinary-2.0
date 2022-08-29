@@ -93,7 +93,11 @@ function showMorePhoto(){
 hidenPhoto.forEach(photo => photo.classList.toggle('hidden_photo'));
 }
 
-  function resetForm(){
-alert('Good');
+  function approveSending(){
+    const form = document.querySelector('.form_container');
+    const approveBlock = document.querySelector('.aprove_send');
+    form.classList.toggle('contact_form_hide');
+    approveBlock.classList.toggle('approve_send_show');
+
 }
 
