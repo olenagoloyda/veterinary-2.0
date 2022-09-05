@@ -79,7 +79,6 @@ p {
 
 .wrapper {
     overflow: hidden;
-    /* max-width: 1920px; */
     margin: 0 auto;
 }
 
@@ -513,13 +512,23 @@ h1 span {
     flex-direction: column;
     padding-right: 15px;
     margin-bottom: 25px;
-
 }
 
 .social-media_links img:last-child {
     padding-top: 25px;
 }
 
+@media(min-width:2120px) {
+    .social-media_links {
+        margin-bottom: 0px;
+        margin-top: 50px;
+    }
+
+    .social-media_links img:last-child {
+        padding-top: 25px;
+    }
+
+}
 
 @media(max-width:684.7px) {
     .homepage_links {
@@ -585,6 +594,34 @@ h1 span {
     padding-top: 30px;
     padding-bottom: 32px;
     width: 32px;
+}
+
+@media(min-width:2120px) {
+
+    .about_us_content {
+        padding-left: 205px;
+        padding-bottom: 70px;
+    }
+
+    .title {
+        font-size: 88px;
+    }
+
+    .p_about_us:nth-of-type(1) {
+        padding-top: 92px;
+    }
+
+    .p_about_us {
+        font-size: 30px;
+        width: 1691px;
+    }
+
+    .about_us_icon {
+        padding-top: 50px;
+        padding-bottom: 52px;
+        width: 42px;
+    }
+
 }
 
 @media(max-width:1038px) {
