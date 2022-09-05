@@ -764,6 +764,97 @@ h1 span {
     left: 20px;
 }
 
+@media(min-width:2120px) {
+    .container_buttons_carousel {
+        margin: 40px 280px 0 280px;
+        height: 100px;
+    }
+
+    .button_carousel {
+        width: 800px;
+    }
+
+    .carousel_title {
+        padding-top: 35px;
+    }
+
+    .carousel-bg {
+        padding-bottom: 80px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .doctors_carousel_content {
+        background-color: white;
+        width: 70%;
+        margin-top: 132px;
+        margin-left: 15%;
+    }
+
+    .doctors_carousel_content_header {
+        margin-left: 64px;
+        position: relative;
+        bottom: 64px;
+    }
+
+    .doctors_photo {
+        width: 420px;
+        max-height: 500px;
+    }
+
+    .doctors_name {
+        font-size: 30px;
+    }
+
+    .doctors_title {
+        height: 64px;
+        width: 346px;
+        padding-top: 20px;
+    }
+
+    .about_doctor_container {
+        margin-left: -280px;
+        margin-top: 15px;
+        padding-right: 55px;
+        height: 400px;
+    }
+
+    .doctors_specialization_section {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .doctors_specialization_section p {
+        font-family: 'Open Sans Condensed bold';
+        font-size: 28px;
+    }
+
+    .doctors_specialization_section span {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 25px;
+    }
+
+    .about_doctors p {
+        margin-top: 15px;
+        font-size: 25px;
+    }
+
+    .about_doctors h6 {
+        font-size: 28px;
+        ;
+    }
+
+    .carousel-control-prev-icon {
+        right: -70px;
+    }
+
+    .carousel-control-next-icon {
+        position: relative;
+        left: -70px;
+    }
+
+}
+
 @media(max-width:1232px) {
     .doctors_carousel_content_header {
         margin-left: 40px;
@@ -967,6 +1058,22 @@ h1 span {
     padding-top: 45px;
     font-size: 25px;
     text-align: end;
+}
+
+@media(min-width:2120px) {
+    .quote_block {
+        width: 60%;
+    }
+
+    .quote_text {
+        font-size: 50px;
+        line-height: 1.5;
+    }
+
+
+    .author {
+        font-size: 35px;
+    }
 }
 
 @media(max-width:650px) {
