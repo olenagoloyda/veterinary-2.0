@@ -1281,10 +1281,6 @@ h1 span {
         font-size: 30px;
     }
 
-    .apotheke_section.show_apotheke {
-        font-size: 35px;
-    }
-
     .services_menu {
         font-size: 20px;
         padding-top: 40px;
@@ -1549,6 +1545,26 @@ h1 span {
     transform: scale(1.1);
 }
 
+@media(min-width:2120px) {
+    .gallery_title {
+        font-size: 78px;
+    }
+
+    .gallery_container img {
+        width: 630px;
+    }
+
+    .right img {
+        width: 640px;
+    }
+
+
+    .gallery_btn {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+}
+
 @media(max-width:769px) {
 
     .gallery_container img {
@@ -1699,6 +1715,38 @@ h1 span {
     display: flex;
     justify-content: center;
     gap: 40px;
+}
+
+@media(min-width:2120px) {
+
+    .contacts_container {
+        gap: 200px;
+        font-size: 26px;
+    }
+
+    .contacts_subcontainer {
+        gap: 200px;
+    }
+
+    .icons {
+        width: 38px;
+        position: relative;
+        right: 45px;
+        top: 35px;
+        margin-right: 8px;
+    }
+
+    .contacts a {
+        font-size: 26px;
+    }
+
+    .phone_decor {
+        width: 400px;
+    }
+
+    .media_icons_container img {
+        width: 35px;
+    }
 }
 
 @media(max-width:1183px) {
@@ -1943,6 +1991,73 @@ h1 span {
 
 .approve_send_show {
     display: block;
+}
+
+@media(min-width:2120px) {
+    .contact_form {
+        padding: 30px;
+        position: absolute;
+        top: 20px;
+        left: 80%;
+        z-index: 3;
+        background-color: whitesmoke;
+        width: 460px;
+        max-height: 513px;
+    }
+
+
+    .contact_form input {
+        font-family: 'Open Sans Condensed bold';
+        width: 100%;
+        padding-left: 5px;
+        min-height: 50px;
+        color: black;
+        background-color: whitesmoke;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.066);
+        border-left: none;
+        border-right: none;
+        padding-top: 22px;
+
+    }
+
+    .contact_form input::placeholder {
+        font-size: 12px;
+        color: black
+    }
+
+    .contact_form textarea::placeholder {
+        text-align: center;
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        color: black;
+        opacity: 0.9;
+    }
+
+    .contact_form textarea {
+        padding-top: 10px;
+        max-width: 100%;
+    }
+
+    .form_title {
+        font-size: 17px;
+        text-align: center;
+        position: relative;
+        bottom: 32px;
+        background-color: whitesmoke;
+    }
+
+    .form_button {
+        background-color: var(--brand-orange-color);
+        height: 30px;
+        padding: 10px;
+        padding-bottom: 25px;
+        display: block;
+        margin: 20px auto;
+        margin-bottom: 15px;
+    }
+
 }
 
 @media(max-width:1190px) {
